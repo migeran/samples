@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8DS-Ku-aC4">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Cam View Controller-->
+        <scene sceneID="PTT-tH-10c">
+            <objects>
+                <viewController id="8DS-Ku-aC4" userLabel="Cam View Controller" customClass="AVCamViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LlA-wZ-0dM"/>
+                        <viewControllerLayoutGuide type="bottom" id="lgA-Uu-VgD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="10s-Pt-eZ8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bup-Dd-ado" customClass="AVCamPreviewView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMt-T6-Oud">
+                                        <rect key="frame" x="145" y="518" width="30" height="30"/>
+                                        <state key="normal" title="Still">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="285" y="744" width="30" height="30"/>
+                                        </variation>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="142" y="521" width="30" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="snapStillImage:" destination="8DS-Ku-aC4" eventType="touchUpInside" id="tmx-Yb-8ng"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1f-l4-gVJ">
+                                        <rect key="frame" x="213" y="518" width="54" height="30"/>
+                                        <state key="normal" title="Camera">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="370" y="744" width="54" height="30"/>
+                                        </variation>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="250" y="521" width="54" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="changeCamera:" destination="8DS-Ku-aC4" eventType="touchUpInside" id="Ljv-gD-ANr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXE-mq-QfG">
+                                        <rect key="frame" x="55" y="518" width="50" height="30"/>
+                                        <state key="normal" title="Record">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="275" y="385" width="50" height="30"/>
+                                        </variation>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="17" y="521" width="50" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="toggleMovieRecording:" destination="8DS-Ku-aC4" eventType="touchUpInside" id="l8v-GX-vs2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="pMt-T6-Oud" secondAttribute="centerX" id="7pq-le-X39"/>
+                                    <constraint firstAttribute="bottom" secondItem="pMt-T6-Oud" secondAttribute="bottom" constant="20" id="IdU-kZ-bzh"/>
+                                    <constraint firstAttribute="centerX" secondItem="V1f-l4-gVJ" secondAttribute="centerX" multiplier="2:3" id="J7r-wI-syc"/>
+                                    <constraint firstItem="pMt-T6-Oud" firstAttribute="baseline" secondItem="V1f-l4-gVJ" secondAttribute="baseline" id="QlO-hV-yrB"/>
+                                    <constraint firstAttribute="centerX" secondItem="nXE-mq-QfG" secondAttribute="centerX" multiplier="2:1" id="lII-T8-yPu"/>
+                                    <constraint firstItem="pMt-T6-Oud" firstAttribute="baseline" secondItem="nXE-mq-QfG" secondAttribute="baseline" id="qMw-zf-ike"/>
+                                </constraints>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3lW-9T-vHA" appends="YES" id="M2g-ii-rDZ"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Bup-Dd-ado" secondAttribute="trailing" id="25M-Ql-CHT"/>
+                            <constraint firstItem="Bup-Dd-ado" firstAttribute="top" secondItem="10s-Pt-eZ8" secondAttribute="topMargin" id="8n0-XF-Mef"/>
+                            <constraint firstItem="Bup-Dd-ado" firstAttribute="leading" secondItem="10s-Pt-eZ8" secondAttribute="leading" id="Vz6-iX-0Tz"/>
+                            <constraint firstItem="lgA-Uu-VgD" firstAttribute="top" secondItem="Bup-Dd-ado" secondAttribute="bottom" id="dWu-6u-7GU"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="cameraButton" destination="V1f-l4-gVJ" id="fQi-Eu-8Gi"/>
+                        <outlet property="previewView" destination="Bup-Dd-ado" id="Sap-jh-CTc"/>
+                        <outlet property="recordButton" destination="nXE-mq-QfG" id="9pA-35-0pU"/>
+                        <outlet property="stillButton" destination="pMt-T6-Oud" id="c9r-8A-guv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pC0-eD-KA2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="3lW-9T-vHA">
+                    <connections>
+                        <action selector="focusAndExposeTap:" destination="8DS-Ku-aC4" id="HRP-mf-hDX"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="294" y="321"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,88 @@
+/************************/
+/** Build Script Setup **/
+/************************/
+
+buildscript {
+    // Add central and local Maven repos
+    repositories {
+        maven {
+            url('https://dl.migeran.com/maven/')
+        }
+        mavenCentral()
+    }
+    dependencies {
+        // Migeran plugin
+        classpath 'com.migeran:migeran.build.gradle:0.93.+'
+    }
+}
+
+/*******************/
+/** Project Setup **/
+/*******************/
+
+// Apply plugins
+apply plugin: 'eclipse'
+apply plugin: 'migeran'
+apply plugin: 'idea'
+
+// Set source and target to Java 7
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
+
+// Set maven repository
+repositories {
+    maven {
+        url('https://dl.migeran.com/maven/')
+    }
+    mavenCentral()
+}
+
+// Exclude all files from Gradle's test runner
+test { exclude '**' }
+
+// Setup Migeran
+migeran {
+    sdk.maven('ios', 'com.migeran:migeran-ios:0.93.+')
+    xcode.mainTarget = 'MigeranDemo'
+    xcode.testTarget = 'MigeranDemo-Test'
+}
+
+// Set dependencies
+dependencies {
+    // Add jars from the Migeran SDK
+    compile migeran.sdk.mainJars
+    testCompile migeran.sdk.testJars
+
+    // Compile with 'jar' files in the project's 'lib' directory
+    compile fileTree(dir: 'lib', include: '*.jar')
+}
+
+// Set Migeran SDK as boot classpath
+compileJava { options.bootClasspath = migeran.sdk.coreJarPath }
+compileTestJava { options.bootClasspath = migeran.sdk.coreJarPath }
+
+// Setup Eclipse
+eclipse {
+    classpath {
+        // Remove the default JRE container, Migeran SDK will take its place
+        file.whenMerged { classpath ->
+            project.migeran.fixJavaDocAndSources(classpath)
+            classpath.entries.removeAll { entry ->
+                entry.kind == 'con' && entry.path.startsWith('org.eclipse.jdt.launching.JRE_CONTAINER')
+            }
+        }
+    }
+
+    // Set Migeran natures and build commands
+    project {
+        natures 'com.migeran.mdt.appnature'
+        buildCommand 'com.migeran.mdt.generalbuilder'
+    }
+}
+
+// Setup Idea
+idea {
+    module {
+        jdkName='Migeran SDK'
+    }
+}

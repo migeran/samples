@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D767E5A046C60C80E006A1C /* preregister.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3E699F8AFDC31BF229AA6C48 /* preregister.txt */; };
+		4C449E162E6AC1AFB7528589 /* preregister.txt in Resources */ = {isa = PBXBuildFile; fileRef = 34B480FA037FEFB2418C6C08 /* preregister.txt */; };
+		58E5F2B247AEE1EC6FF5730D /* classlist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16FBFA9ACB460DD4B67AB540 /* classlist.txt */; };
+		5B8DB96A801E33430F985594 /* MigeranSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D550B9D943FA9427637C4FB /* MigeranSDK.framework */; };
+		5D5A040851ED212A2B65F26D /* MigeranSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D550B9D943FA9427637C4FB /* MigeranSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7CCBBB2B63170E4B88BA7A75 /* application.jar in Resources */ = {isa = PBXBuildFile; fileRef = 89E5B64C2FBE3FFE39CF7A0C /* application.jar */; };
+		9E8093D871314882B26B6C52 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30421DFEC189DF2548E15EFE /* main.cpp */; };
+		A9BE36E71195073060CB50CA /* application.jar in Resources */ = {isa = PBXBuildFile; fileRef = EB4CDE8B15F6813680B05EAD /* application.jar */; };
+		D9BA151C1A8E4AE0000E2857 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BA151B1A8E4AE0000E2857 /* TableViewController.m */; };
+		D9BA15251A8E4B1B000E2857 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BA15241A8E4B1B000E2857 /* TableViewCell.m */; };
+		D9BA15281A8E4B31000E2857 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BA15271A8E4B31000E2857 /* DetailViewController.m */; };
+		D9BA152B1A8E4B3C000E2857 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BA152A1A8E4B3C000E2857 /* AddViewController.m */; };
+		D9BA152D1A8E4B95000E2857 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9BA152C1A8E4B95000E2857 /* Main.storyboard */; };
+		DB110500798E8955207370EA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30421DFEC189DF2548E15EFE /* main.cpp */; };
+		E46FF780EC037776B3FCA078 /* MigeranSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D550B9D943FA9427637C4FB /* MigeranSDK.framework */; };
+		EC1EAC1121B6D8A25336CC6A /* MigeranSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D550B9D943FA9427637C4FB /* MigeranSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		840D4DE8AB330E3D282A1684 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EC1EAC1121B6D8A25336CC6A /* MigeranSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3BFA4C3F7031613B8EBE138 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5D5A040851ED212A2B65F26D /* MigeranSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		16FBFA9ACB460DD4B67AB540 /* classlist.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = classlist.txt; path = build/migeran/test/classlist.txt; sourceTree = SOURCE_ROOT; };
+		1D068E77EEA3AB9921C89000 /* MyQuickWiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyQuickWiki.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30421DFEC189DF2548E15EFE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		34B480FA037FEFB2418C6C08 /* preregister.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = preregister.txt; path = build/migeran/main/preregister.txt; sourceTree = SOURCE_ROOT; };
+		3E699F8AFDC31BF229AA6C48 /* preregister.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = preregister.txt; path = build/migeran/test/preregister.txt; sourceTree = SOURCE_ROOT; };
+		5D550B9D943FA9427637C4FB /* MigeranSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MigeranSDK.framework; path = build/migeran/runtime/iphoneos/MigeranSDK.framework; sourceTree = SOURCE_ROOT; };
+		89E5B64C2FBE3FFE39CF7A0C /* application.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; name = application.jar; path = build/migeran/main/application.jar; sourceTree = SOURCE_ROOT; };
+		9C61E79CE14589DD5DDC502E /* build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = build.xcconfig; sourceTree = "<group>"; };
+		B20643F99183C57100F4DE41 /* MyQuickWiki-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyQuickWiki-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D11CE10063E7F0D765C07BE3 /* Info-Test.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Test.plist"; sourceTree = "<group>"; };
+		D9BA151A1A8E4AE0000E2857 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		D9BA151B1A8E4AE0000E2857 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		D9BA15231A8E4B1B000E2857 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		D9BA15241A8E4B1B000E2857 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		D9BA15261A8E4B31000E2857 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		D9BA15271A8E4B31000E2857 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		D9BA15291A8E4B3C000E2857 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		D9BA152A1A8E4B3C000E2857 /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		D9BA152C1A8E4B95000E2857 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EB4CDE8B15F6813680B05EAD /* application.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; name = application.jar; path = build/migeran/test/application.jar; sourceTree = SOURCE_ROOT; };
+		F1B7DEFD3DA5B150942D13A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7F1C08DE99151435DF0E62F /* build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = build.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19F28013D236CC461C12687E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B8DB96A801E33430F985594 /* MigeranSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49C5AF2EE8031F5B0893C334 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46FF780EC037776B3FCA078 /* MigeranSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DECAA3FA3BF0ECC24903E97 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30421DFEC189DF2548E15EFE /* main.cpp */,
+				9C61E79CE14589DD5DDC502E /* build.xcconfig */,
+				F1B7DEFD3DA5B150942D13A6 /* Info.plist */,
+				34B480FA037FEFB2418C6C08 /* preregister.txt */,
+				89E5B64C2FBE3FFE39CF7A0C /* application.jar */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79C6AD6FBE18573629305939 = {
+			isa = PBXGroup;
+			children = (
+				7A277B2473E58C32D747D2AE /* MyQuickWiki */,
+				C63BFBE4F2764A45A204B739 /* MyQuickWiki-Test */,
+				98FA0B4C1E1F806312CA9D45 /* Frameworks */,
+				FFC8D48F3EC24054B64384EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A277B2473E58C32D747D2AE /* MyQuickWiki */ = {
+			isa = PBXGroup;
+			children = (
+				6DECAA3FA3BF0ECC24903E97 /* Supporting Files */,
+				D9BA151A1A8E4AE0000E2857 /* TableViewController.h */,
+				D9BA151B1A8E4AE0000E2857 /* TableViewController.m */,
+				D9BA15231A8E4B1B000E2857 /* TableViewCell.h */,
+				D9BA15241A8E4B1B000E2857 /* TableViewCell.m */,
+				D9BA15261A8E4B31000E2857 /* DetailViewController.h */,
+				D9BA15271A8E4B31000E2857 /* DetailViewController.m */,
+				D9BA15291A8E4B3C000E2857 /* AddViewController.h */,
+				D9BA152A1A8E4B3C000E2857 /* AddViewController.m */,
+				D9BA152C1A8E4B95000E2857 /* Main.storyboard */,
+			);
+			path = "MyQuickWiki";
+			sourceTree = "<group>";
+		};
+		98FA0B4C1E1F806312CA9D45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D550B9D943FA9427637C4FB /* MigeranSDK.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		C63BFBE4F2764A45A204B739 /* MyQuickWiki-Test */ = {
+			isa = PBXGroup;
+			children = (
+				F3084CA3AAFD3D107DE3EA36 /* Supporting Files */,
+			);
+			path = "MyQuickWiki-Test";
+			sourceTree = "<group>";
+		};
+		F3084CA3AAFD3D107DE3EA36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7F1C08DE99151435DF0E62F /* build.xcconfig */,
+				D11CE10063E7F0D765C07BE3 /* Info-Test.plist */,
+				3E699F8AFDC31BF229AA6C48 /* preregister.txt */,
+				EB4CDE8B15F6813680B05EAD /* application.jar */,
+				16FBFA9ACB460DD4B67AB540 /* classlist.txt */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFC8D48F3EC24054B64384EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D068E77EEA3AB9921C89000 /* MyQuickWiki.app */,
+				B20643F99183C57100F4DE41 /* MyQuickWiki-Test.app */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6697A65A32FF113E4D53B18E /* MyQuickWiki-Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD605DC058845F4A1C3146C2 /* Build configuration list for PBXNativeTarget "MyQuickWiki-Test" */;
+			buildPhases = (
+				3A5A0C9819B45C08A10AA026 /* Compile Sources (Migeran) */,
+				49C5AF2EE8031F5B0893C334 /* Frameworks */,
+				8C04C879E586E0AD341915B0 /* Resources */,
+				69759EF7E362C2C35435D7F9 /* Sources */,
+				840D4DE8AB330E3D282A1684 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			name = "MyQuickWiki-Test";
+			productName = "MyQuickWiki-Test";
+			productReference = B20643F99183C57100F4DE41 /* MyQuickWiki-Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD7A62490FA708163CE1504C /* MyQuickWiki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 726F27826BC7A57AA0F59108 /* Build configuration list for PBXNativeTarget "MyQuickWiki" */;
+			buildPhases = (
+				1585946B2C9343B59E91BCE8 /* Compile Sources (Migeran) */,
+				19F28013D236CC461C12687E /* Frameworks */,
+				1C332C24B5883C385E1E77E6 /* Resources */,
+				54FB833E1A1B51A1FB7F44DD /* Sources */,
+				F3BFA4C3F7031613B8EBE138 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			name = "MyQuickWiki";
+			productName = "MyQuickWiki";
+			productReference = 1D068E77EEA3AB9921C89000 /* MyQuickWiki.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F63BCD53A1DA50C4E71D9DB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "";
+			};
+			buildConfigurationList = 1CBB7DA643AC86D0BDCDB36C /* Build configuration list for PBXProject "MyQuickWiki" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79C6AD6FBE18573629305939;
+			productRefGroup = FFC8D48F3EC24054B64384EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD7A62490FA708163CE1504C /* MyQuickWiki */,
+				6697A65A32FF113E4D53B18E /* MyQuickWiki-Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C332C24B5883C385E1E77E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9BA152D1A8E4B95000E2857 /* Main.storyboard in Resources */,
+				4C449E162E6AC1AFB7528589 /* preregister.txt in Resources */,
+				7CCBBB2B63170E4B88BA7A75 /* application.jar in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C04C879E586E0AD341915B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D767E5A046C60C80E006A1C /* preregister.txt in Resources */,
+				A9BE36E71195073060CB50CA /* application.jar in Resources */,
+				58E5F2B247AEE1EC6FF5730D /* classlist.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1585946B2C9343B59E91BCE8 /* Compile Sources (Migeran) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Sources (Migeran)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "cd \"${SRCROOT}/\"\n\n########################\n# Find Gradle\n########################\nfunction findGradle {\n\tCD=\"$PWD\"\n\twhile [ \"$CD\" != \"\" ]; do\n\t\techo \"Looking for gradlew in $CD\"\n\t\tif [ -x \"$CD/gradlew\" ]; then\n\t\t\tGRADLE_EXEC=$CD/gradlew\n\t\t\treturn 0\n\t\tfi\n\t\tCD=\"${CD%/*}\"\n\tdone\n    if [ $? -ne 0 ]; then\n        echo \"Checking with 'which'\"\n        GRADLE_EXEC=$(which 'gradle')\n    fi\n    if [ \"$GRADLE_EXEC\" = \"\" ]; then\n        echo \"Falling back to '/usr/local/bin/gradle'\"\n        GRADLE_EXEC=/usr/local/bin/gradle\n    fi\n}\nfindGradle\n\n########################\n# Execute Gradle build\n########################\nif [ -z \"$MIGERAN_GRADLE_EXTERNAL_BUILD\" ]; then\n    $GRADLE_EXEC --daemon migeranXcodeInternal\nfi\n";
+		};
+		3A5A0C9819B45C08A10AA026 /* Compile Sources (Migeran) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Sources (Migeran)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "cd \"${SRCROOT}/\"\n\n########################\n# Find Gradle\n########################\nfunction findGradle {\n\tCD=\"$PWD\"\n\twhile [ \"$CD\" != \"\" ]; do\n\t\techo \"Looking for gradlew in $CD\"\n\t\tif [ -x \"$CD/gradlew\" ]; then\n\t\t\tGRADLE_EXEC=$CD/gradlew\n\t\t\treturn 0\n\t\tfi\n\t\tCD=\"${CD%/*}\"\n\tdone\n    if [ $? -ne 0 ]; then\n        echo \"Checking with 'which'\"\n        GRADLE_EXEC=$(which 'gradle')\n    fi\n    if [ \"$GRADLE_EXEC\" = \"\" ]; then\n        echo \"Falling back to '/usr/local/bin/gradle'\"\n        GRADLE_EXEC=/usr/local/bin/gradle\n    fi\n}\nfindGradle\n\n########################\n# Execute Gradle build\n########################\nif [ -z \"$MIGERAN_GRADLE_EXTERNAL_BUILD\" ]; then\n    export MIGERAN_BUILD_SOURCE_SET=test\n    $GRADLE_EXEC --daemon migeranXcodeInternal\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54FB833E1A1B51A1FB7F44DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9BA152B1A8E4B3C000E2857 /* AddViewController.m in Sources */,
+				9E8093D871314882B26B6C52 /* main.cpp in Sources */,
+				D9BA15251A8E4B1B000E2857 /* TableViewCell.m in Sources */,
+				D9BA151C1A8E4AE0000E2857 /* TableViewController.m in Sources */,
+				D9BA15281A8E4B31000E2857 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69759EF7E362C2C35435D7F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB110500798E8955207370EA /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6EA8AFFC56FBACB0399FABA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7F1C08DE99151435DF0E62F /* build.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/migeran/runtime/$(PLATFORM_NAME)",
+				);
+				INFOPLIST_FILE = "MyQuickWiki-Test/Info-Test.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks ${SRCROOT}/build/migeran/runtime/iphonesimulator";
+				OTHER_LDFLAGS = "${MIGERAN_OTHER_LDFLAGS}";
+				PRODUCT_NAME = "MyQuickWiki-Test";
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+		6EAB0950C4490DA8ADC44583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SYMROOT = "build-xcode";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79564D3BDD7BFD69A184BAF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SYMROOT = "build-xcode";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79F9365DEFB7142C3E3302D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C61E79CE14589DD5DDC502E /* build.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/migeran/runtime/$(PLATFORM_NAME)",
+				);
+				INFOPLIST_FILE = "MyQuickWiki/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks ${SRCROOT}/build/migeran/runtime/iphonesimulator";
+				OTHER_LDFLAGS = "${MIGERAN_OTHER_LDFLAGS}";
+				PRODUCT_NAME = "MyQuickWiki";
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+		8CDA3D540D5777BB65A03DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C61E79CE14589DD5DDC502E /* build.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/migeran/runtime/$(PLATFORM_NAME)",
+				);
+				INFOPLIST_FILE = "MyQuickWiki/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks ${SRCROOT}/build/migeran/runtime/iphonesimulator";
+				OTHER_LDFLAGS = "${MIGERAN_OTHER_LDFLAGS}";
+				PRODUCT_NAME = "MyQuickWiki";
+				STRIP_STYLE = "non-global";
+			};
+			name = Debug;
+		};
+		A86B41E6D3F7526D8A812EBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7F1C08DE99151435DF0E62F /* build.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/migeran/runtime/$(PLATFORM_NAME)",
+				);
+				INFOPLIST_FILE = "MyQuickWiki-Test/Info-Test.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks ${SRCROOT}/build/migeran/runtime/iphonesimulator";
+				OTHER_LDFLAGS = "${MIGERAN_OTHER_LDFLAGS}";
+				PRODUCT_NAME = "MyQuickWiki-Test";
+				STRIP_STYLE = "non-global";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CBB7DA643AC86D0BDCDB36C /* Build configuration list for PBXProject "MyQuickWiki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EAB0950C4490DA8ADC44583 /* Debug */,
+				79564D3BDD7BFD69A184BAF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		726F27826BC7A57AA0F59108 /* Build configuration list for PBXNativeTarget "MyQuickWiki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CDA3D540D5777BB65A03DB6 /* Debug */,
+				79F9365DEFB7142C3E3302D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD605DC058845F4A1C3146C2 /* Build configuration list for PBXNativeTarget "MyQuickWiki-Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A86B41E6D3F7526D8A812EBA /* Debug */,
+				6EA8AFFC56FBACB0399FABA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F63BCD53A1DA50C4E71D9DB4 /* Project object */;
+}

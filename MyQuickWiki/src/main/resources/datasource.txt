@@ -1,0 +1,10 @@
+Central processing unit	Computing
+Color balance	Photography
+Covariance	Statistics
+Epic poetry	Literature
+High-pass filter	Audio
+Hydrogen	Chemistry
+Phobos	Mythology
+Supremum	Mathematics
+Symbiosis	Biology
+Velocity	Physics

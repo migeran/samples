@@ -1,0 +1,39 @@
+{
+  "platform": "iOS",
+  "package-base": "com.migeran.demo",
+  "base-sdk": "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk",
+  "header-search-paths": [],
+  "user-header-search-paths": [
+    "${PROJECT}/MigeranDemo"
+  ],
+  "framework-search-paths": [],
+  "source": "#import \"TouchTools.h\"\n#import \"UIColor+MigeranDemo.h\"\n#import \"NatJStressTests.h\"\n",
+  "output": "src/main/java",
+  "docsets": [],
+  "unit-rules": [
+    {
+      "final": false,
+      "conditions": [
+        {
+          "condition": "path-prefix",
+          "value": "${SDK}"
+        }
+      ],
+      "actions": [
+        {
+          "action": "replace-package-base",
+          "value": "ios"
+        },
+        {
+          "action": "handling-mode",
+          "value": "external"
+        }
+      ]
+    }
+  ],
+  "type-config-clean-output": false,
+  "header-file-resolving-paths": [
+    "${SDK}/usr/include",
+    "${SDK}/System/Library/Frameworks"
+  ]
+}

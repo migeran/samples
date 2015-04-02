@@ -1,0 +1,20 @@
+# Gradle work files
+.gradle
+
+# Build folders
+build
+build-xcode
+target
+
+# Eclipse project files
+bin
+.settings
+.classpath
+.project
+
+# Xcode user specific data
+SpeakHere.xcodeproj/project.xcworkspace/xcuserdata/
+SpeakHere.xcodeproj/xcuserdata/
+
+# Mac Finder
+.DS_Store

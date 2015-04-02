@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <groupId>com.migeran.sample</groupId>
+  <artifactId>com.migeran.sample.speakhere</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <name>SpeakHere</name>
+  <packaging>jar</packaging>
+  
+  <properties>
+  	<migeran.plugin.version>1.0</migeran.plugin.version>
+  	<migeran.version>[0.93.0,0.94.0)</migeran.version>
+  	<migeran.gradle.version>2.2.1</migeran.gradle.version>
+  </properties>
+  	
+  <repositories>
+  	<repository>
+      <id>migeran</id>
+      <name>migeran-repo</name>
+      <url>https://dl.migeran.com/maven/</url>
+    </repository>
+  </repositories>
+   
+  <pluginRepositories>
+  	<pluginRepository>
+      <id>migeran</id>
+      <name>migeran-repo</name>
+      <url>https://dl.migeran.com/maven/</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <dependencies>
+      <dependency>
+          <groupId>com.migeran</groupId>
+          <artifactId>migeran-ios</artifactId>
+          <version>${migeran.version}</version>
+          <classifier>ios</classifier>
+      </dependency>
+      <dependency>
+          <groupId>com.migeran</groupId>
+          <artifactId>migeran-ios</artifactId>
+          <version>${migeran.version}</version>
+          <classifier>core</classifier>
+      </dependency>
+      <dependency>
+          <groupId>com.migeran</groupId>
+          <artifactId>migeran-ios</artifactId>
+          <version>${migeran.version}</version>
+          <classifier>junit</classifier>
+          <scope>test</scope>
+      </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.18.1</version>
+        <configuration>
+            <skipTests>true</skipTests>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.2</version>
+       <configuration>
+           <source>1.7</source>
+           <target>1.7</target>
+           <compilerArguments>
+              <bootclasspath>${project.dependencies}</bootclasspath>
+           </compilerArguments>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-eclipse-plugin</artifactId>
+        <version>2.9</version>
+        <configuration>
+          <additionalProjectnatures>
+            <projectnature>com.migeran.mdt.appnature</projectnature>
+            <projectnature>org.eclipse.m2e.core.maven2Nature</projectnature>
+          </additionalProjectnatures>
+          <additionalBuildcommands>
+            <buildcommand>org.eclipse.m2e.core.maven2Builder</buildcommand>
+            <buildcommand>com.migeran.mdt.generalbuilder</buildcommand>
+          </additionalBuildcommands>
+        </configuration>
+      </plugin>
+    <plugin>
+      <groupId>com.migeran</groupId>
+      <artifactId>migeran-maven-plugin</artifactId>
+      <configuration>
+		  <gradleVersion>${migeran.gradle.version}</gradleVersion>
+      </configuration>
+      <version>${migeran.plugin.version}</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>

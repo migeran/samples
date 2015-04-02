@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="6VI-7H-ddx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="5wE-tX-dHl">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="jq0-l3-pl4" customClass="SampleTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="iqU-0K-vVJ">
+                        <rect key="frame" x="0.0" y="0.0" width="308" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SampleCell" textLabel="yUZ-dC-1cJ" style="IBUITableViewCellStyleDefault" id="aGr-6F-xTf">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aGr-6F-xTf" id="2T6-am-fPX">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yUZ-dC-1cJ">
+                                            <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jq0-l3-pl4" id="lsp-2N-78c"/>
+                            <outlet property="delegate" destination="jq0-l3-pl4" id="wTU-CS-eRK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="zAI-0U-TBn"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1bT-HW-bfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903" y="-1190"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Glh-MV-kzY">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Stw-nu-CsB" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="oMK-Wt-RrV">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="aD5-mj-ISk" kind="relationship" relationship="rootViewController" id="qhA-2t-iOY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P3C-LI-3aZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="399" y="-51"/>
+        </scene>
+        <!--Migeran Demo-->
+        <scene sceneID="hsI-Dp-vpj">
+            <objects>
+                <viewController title="Migeran Demo" id="aD5-mj-ISk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rf5-1S-49O"/>
+                        <viewControllerLayoutGuide type="bottom" id="ddi-ob-rOe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wud-uk-798">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MigeranLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="bwl-16-C65">
+                                <rect key="frame" x="84" y="383" width="600" height="258"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="bwl-16-C65" secondAttribute="centerY" id="Ez4-6R-QA2"/>
+                            <constraint firstAttribute="centerX" secondItem="bwl-16-C65" secondAttribute="centerX" id="g4u-vB-DVc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TSp-P2-dD9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zCu-wK-DyP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1384" y="-51"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MGY-V1-ilc">
+            <objects>
+                <navigationController id="zIm-Jt-N1r" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="black" id="H5N-vb-4dM">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jq0-l3-pl4" kind="relationship" relationship="rootViewController" id="u4X-nL-zaO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pNm-hw-d6E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="399" y="-1190"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="H1U-WC-t6R">
+            <objects>
+                <splitViewController id="6VI-7H-ddx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <connections>
+                        <segue destination="zIm-Jt-N1r" kind="relationship" relationship="masterViewController" id="6t6-6r-LxB"/>
+                        <segue destination="Stw-nu-CsB" kind="relationship" relationship="detailViewController" id="7du-FW-QGa"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sGi-m8-p5Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-577" y="-691"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MigeranLogo.png" width="600" height="258"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
